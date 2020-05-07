@@ -13,7 +13,7 @@
   ```bash
   # 安装依赖
   npm install
-  # 启动
+  # 在8080端口启动
   npm run serve
   ```
 
@@ -34,6 +34,8 @@
   # 在3002端口启动
   yarn start
   ```
+
+三个项目都启动完成后 [localhost:8080](localhost:8080) 开冲，默认是vue子项目直接启动
 
 ## 实现特性
 
