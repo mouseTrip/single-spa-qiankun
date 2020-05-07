@@ -2,13 +2,10 @@
  * @Author: 张天昊
  * @Date: 2020-05-06 17:22:59
  * @LastEditors: 张天昊
- * @LastEditTime: 2020-05-06 17:25:38
+ * @LastEditTime: 2020-05-07 17:06:12
  * @Description:
  */
 const { name } = require('./package')
-
-const port = 3001 // dev port
-
 module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
@@ -16,7 +13,6 @@ module.exports = {
   devServer: {
     hot: true,
     disableHostCheck: true,
-    port,
     overlay: {
       warnings: false,
       errors: true,
