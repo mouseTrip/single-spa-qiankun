@@ -2,7 +2,7 @@
  * @Author: 张天昊
  * @Date: 2020-05-06 16:39:30
  * @LastEditors: 张天昊
- * @LastEditTime: 2020-05-07 14:49:16
+ * @LastEditTime: 2020-05-08 10:08:55
  * @Description:
  */
 import {
@@ -50,7 +50,9 @@ registerMicroApps(apps, mainLifeCycles)
 
 setDefaultMountApp('vue')
 
-start()
+start({
+  sandbox: { strictStyleIsolation: true },
+})
 
 runAfterFirstMounted(() => {
   console.log('[MainApp] first app mounted')
